@@ -16,7 +16,6 @@ input{
     width: 130px;    
 }
 
-
 .frameFrame{
     background-color: chocolate;
 }
@@ -71,4 +70,11 @@ input{
 }
 .btn{
     margin-top: 2%;
+}
+
+.erro {
+    border:2px solid red;
+}
+.form-control{
+    border-color: #808080;
 }

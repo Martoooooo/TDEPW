@@ -7,10 +7,12 @@
     <title>natan.natan cadastro</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    
+    <script type="text/javascript" src= "../javascript/jquery.js"></script>
+    <script type="text/javascript" src= "../javascript/cadastro.js"></script>
 
-    <script type="text/javascript" src= "../javascript/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilosCadastro.css">
 
 </head>
 
@@ -27,61 +29,49 @@
         
         <div class="inputNatan input-group mb-3">
 
-            <form class= "inputs">
+            <form class= "inputs needs-validation" novalidate>
 
                 
-                <label for="inputNome" class="form-label">Nome</label>
-                <input type="text" id="inputNome" class="input form-control" placeholder="Nome" aria-label="nome" aria-describedby="basic-addon1">
+                <label for="inputNome" class="userNome form-label">Nome</label>
+                <input type="text" class="input form-control"id="inputNome" name="userNome" placeholder="Nome" aria-label="nome" aria-describedby="inputGroupPrepend" required>
                 <br>
 
-                <label for="inputNome" class="form-label">Usuario</label>
-                <input type="text" id="inputNome" class="input form-control" placeholder="Usuário" aria-label="usuario" aria-describedby="basic-addon1">
+                <label for="inputUsuario" class="userUser form-label">Usuario</label>
+                <input type="text" id="inputUsuario" class="input form-control" name= "userUser" placeholder="Usuário" aria-label="usuario" aria-describedby="basic-addon1" required>
                 <br>
                 
-                <label for="inputSobrenome" class="form-label">Email</label>
-                <input type="text" id="inputSobrenome" class="input form-control" placeholder="e-mail" aria-label="email" aria-describedby="basic-addon1">
+                <label for="inputEmail" class="userEmail form-label">Email</label>
+                <input type="email" id="inputEmail" class="input form-control" name= "userEmail" placeholder="exemplo@exemplo.com" aria-label="email" aria-describedby="basic-addon1" required>
                 <br>
                 
-                <label for="userSexo">Sexo </label>
-
-                <div id="sexo" class="checkNatan form-check">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Masculino
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Feminino
-                        </label>
-                    </div>
-                </div>
+                <label for="inputSexo" class= 'userSexo form-label' >Sexo </label>
+                <input type="text" id="inputSexo" class="input form-control" name= "userSexo" placeholder="M / F" aria-label="sexo" aria-describedby="basic-addon1" required>
                 <br>
 
-                <label for="inputEmail" class="form-label">Senha</label>
-                <input type="text" id="inputEmail" class="input form-control" placeholder="Senha" aria-label="senha" aria-describedby="basic-addon1">
+                <label for="inputSenha" class="userSenha form-label">Senha</label>
+                <input type="password" id="inputSenha" class="input form-control" name= "userSenha" placeholder="Senha" aria-label="senha" aria-describedby="basic-addon1" required>
                 <br>
                 
-                <label for="inputCpf" class="form-label">Confirmar Senha</label>
-                <input type="text" id="inputCpf" class="input form-control" placeholder="Confirmar senha" aria-label="confirmarSenha" aria-describedby="basic-addon1">
+                <label for="inputConfSenha" class="userConfSenha form-label">Confirmar Senha</label>
+                <input type="password" id="inputConfSenha" class="input form-control" name= "userConfSenha" placeholder="Confirmar senha" aria-label="confirmarSenha" aria-describedby="basic-addon1" required>
                 <br>
                 
-                <label for="inputSenha" class="form-label">Digite "natan" para confirmar que você não é um robô</label>
-                <input type="text" id="inputSenha" class="input form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                <label for="inputConfNatan" class="confNatan form-label">Digite "natan" para confirmar que você não é um robô</label>
+                <input type="text" id="inputConfNatan" class="input form-control" name= "natan" placeholder="" aria-label="" aria-describedby="basic-addon1" required>
                 <br>
                 
-            <button id="bGravar"> Confirmar </button>
-            <button id="bListar"> Confirmar </button>
-            
+                <h6 id= "error">
+                    Senhas não são iguais, favor digitar novamente
+                </h6>
+
+                <button type= "submit" id="bGravar" class="btn btn-primary"> Confirmar </button>
 
             </form>
                 
         </div>
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src= "../javascript/checarcampos.js"></script>
+    
 </body>
 </html>
