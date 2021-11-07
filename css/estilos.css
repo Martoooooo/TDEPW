@@ -9,6 +9,11 @@ h2{
     display: flex;
     justify-content: center;
 }
+p{
+    display: flex;
+    justify-content: center;
+
+}
 input{
     font-size: large;
     height:50px;

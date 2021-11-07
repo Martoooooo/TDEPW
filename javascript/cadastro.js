@@ -19,6 +19,11 @@ function fLocalEventosClick(){
 
         var verificacao= document.getElementById('inputConfNatan').value;
        
+        if(nome == '' || user == '' || email == '' || sexo == '' || senha == ''){
+            document.getElementById('error').innerHTML = "<h6> Há campos que não foram preenchidos </h6>";
+            document.getElementById('error').style.display= 'block';
+
+        }
     
         if(nome == ''){
             document.getElementById('inputNome').style.borderColor= '#FF0000';
@@ -65,6 +70,7 @@ function fLocalEventosClick(){
 
                 
                 $('#inputConfSenha').val('');
+                document.getElementById('error').innerHTML = "<h6> Senhas não são iguais, digite novamente </h6>";
                 document.getElementById('error').style.display = 'block';
     
               
@@ -75,7 +81,7 @@ function fLocalEventosClick(){
                     $('#inputConfNatan').val('');
                     
                     document.getElementById('inputConfNatan').style.borderColor= '#FF0000';
-                    document.getElementById('error').innerHTML = "<h6> falha na verificação </h6>";
+                    document.getElementById('error').innerHTML = "<h6> Falha na verificação, digite 'natan' acima </h6>";
                     document.getElementById('error').style.display= 'block';
     
                 }else{
