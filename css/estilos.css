@@ -1,0 +1,74 @@
+html{
+    background-color: chocolate;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+input{
+    font-size: large;
+    height:50px;
+    text-align: center;
+    width: 130px;    
+}
+
+
+.frameFrame{
+    background-color: chocolate;
+}
+.inputLoginFrame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputMenor{
+    height: 30px;
+    width: 150px;
+
+    margin: 15px;
+    border-radius: 0.5em;
+}
+.inputNatanFrame{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.inputs{
+    margin: 0 auto;
+}
+.buttonNatan{
+    justify-content: center;
+    height: 50px;
+    width: 100vw;
+}
+.contadorNatan{
+    font-size: xx-large;
+}
+.cabecalho {
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+}
+.form-check {
+    display: flex;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: 0.125rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.input {
+    margin: 0 auto;
+    width: 300px;
+    
+}
+.btn{
+    margin-top: 2%;
+}
